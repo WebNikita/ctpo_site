@@ -18,15 +18,14 @@ header{
 	padding-top: 100px;
 }
 
-.main_description{	
+.main_description{
+	float: right;
 	width: 500px;
 	height: 155px;
 	padding-top: 500px;
-	padding-left: 900px;
 }
-
 .block_name{
-	margin: 100px 0px 100px 200px;
+	margin: 100px 0px 70px 200px;
 	font-family: SF Compact Display;
 	font-style: normal;
 	font-weight: normal;
@@ -36,5 +35,23 @@ header{
 }
 
 .news_title{
-	
+	margin-bottom: 50px;
+}
+
+.news_img img{
+	width: 100%;
+	height: 700px;
+}
+
+.news_text{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.map{
+	float: left;
+}
+
+.contact_info{
+	float: right;
 }

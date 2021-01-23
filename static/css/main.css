@@ -10,6 +10,10 @@ font-style: normal;
 
 }
 
+hr{
+	border: 1px solid #C4C4C4;
+}
+
 .title h1{
 	color: #3A55E7;
 	font-family: SF Compact Display;
@@ -34,4 +38,22 @@ font-style: normal;
 	font-weight: normal;
 	font-size: 36px;
 	line-height: 43px;
+}
+
+.news_text p{
+	font-family: SF Compact Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 130%;
+}
+
+.date p {
+	text-align: right;
+	font-family: SF Compact Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 130%;
+	color: #828282;
 }
