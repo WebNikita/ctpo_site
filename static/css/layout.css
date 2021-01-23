@@ -1,0 +1,40 @@
+header{
+	width: 100vw;
+  	height: 100vh;
+	background: url(../img/main_img.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.content{	
+	margin-left: 200px;
+	margin-right: 200px;
+
+}
+
+.title{
+	padding-top: 100px;
+}
+
+.main_description{	
+	width: 500px;
+	height: 155px;
+	padding-top: 500px;
+	padding-left: 900px;
+}
+
+.block_name{
+	margin: 100px 0px 100px 200px;
+	font-family: SF Compact Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 96px;
+	line-height: 115px;
+	color: #C5C5C5;
+}
+
+.news_title{
+	
+}

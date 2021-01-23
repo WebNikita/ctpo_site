@@ -1,0 +1,37 @@
+@font-face{
+
+font-family: 'SF Compact Display';
+
+src: url('../fonts/sf-compact-display-thin-58646eb43a785.otf');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
+.title h1{
+	color: #3A55E7;
+	font-family: SF Compact Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 96px;
+	line-height: 115px;
+}
+
+.title h2{
+	font-family: SF Compact Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 43px;
+	color: #828282;
+}
+
+.news_title h3{
+	font-family: SF Compact Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 43px;
+}
