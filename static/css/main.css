@@ -14,6 +14,7 @@ hr{
 	border: 1px solid #C4C4C4;
 }
 
+
 .title h1{
 	color: #3A55E7;
 	font-family: SF Compact Display;
@@ -68,22 +69,63 @@ hr{
 
 .footer_content a{
 	text-decoration: none;
-	font-family: Roboto;
+	font-family: SF Compact Display;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 24px;
+	font-size: 34px;
 	line-height: 28px;
 
 	color: #C4C4C4;
 
 }
 .footer_content p{
-	font-family: Roboto;
+	font-family: SF Compact Display;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 24px;
+	font-size: 34px;
 	line-height: 28px;
 
 	color: rgba(58, 85, 231, 0.8);
 }
 
+.description_block h3{
+	font-family: SF Compact Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 43px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.description_block h4{
+	font-family: SF Compact Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 130%;
+	color: #C5C5C5;
+}
+
+.description_block .activ_h3{
+	color: #3A55E7;
+}
+
+.description_block .activ_h4{
+	color: black;
+}
+
+.description_txt p{
+	font-family: SF Compact Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 130%;
+}
+
+#h3_robototech:hover{
+	color: #3A55E7;
+}
+
+#h3_IoT:hover{
+	color: #3A55E7;
+}
