@@ -57,3 +57,33 @@ hr{
 	line-height: 130%;
 	color: #828282;
 }
+
+.contact_info p{
+	font-family: SF Compact Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 43px;
+}
+
+.footer_content a{
+	text-decoration: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+
+	color: #C4C4C4;
+
+}
+.footer_content p{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+
+	color: rgba(58, 85, 231, 0.8);
+}
+

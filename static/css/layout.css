@@ -48,10 +48,41 @@ header{
 	margin-bottom: 100px;
 }
 
+.content_contact{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: ;
+}
+
 .map{
-	float: left;
+	
 }
 
 .contact_info{
+	margin: auto;
+}
+
+.contact_info p{
+	text-align: center;
+	margin: 7% 0 7% 0;
+
+}
+
+footer{
+	margin-top: 100px;
+}
+
+.footer_content{
+	margin: 50px 0  50px 0;
+}
+
+.footer_content a{
+	margin-left: 50px;
+
+}
+
+.footer_content p{
 	float: right;
+	margin: 0;
 }
