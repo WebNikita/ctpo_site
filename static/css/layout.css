@@ -212,7 +212,7 @@ footer{
 
 @media (max-width: 768px){
 	.block_name{
-		margin: 25px 0 25px 0;
+		margin: 75px 0 35px 0;
 		text-align: center;
 	}
 
@@ -230,7 +230,7 @@ footer{
 
     }
     .footer_content p{
-    	margin-top: 20px;
+    	margin: 20px 0 0 0;
     	float: none;
     	text-align: center;
     }
@@ -278,6 +278,7 @@ footer{
     	font-size: 20px;
     }
 
+
 }
 
 @media (max-width: 768px){
@@ -297,12 +298,15 @@ footer{
 	.description{
 		display: none;
 	}
-	.description.description_title{
-		justify-content: center;
-		margin: 0;
-		width: 100%;
+	.description_title{ 
+		margin: auto;
+		max-width: 95%;
 		padding: 0;
 	}
+	.description_block h3{
+		text-align: center;
+	}
+
 }
 @media (max-width: 375px){
 	.title h1{
