@@ -283,12 +283,25 @@ footer{
 @media (max-width: 768px){
 	.block_name{
 		font-size: 45px;
+		line-height: 100%;
 	}
 	.news{
     	height: 300px;
     }
     .320_phone_map{
 		display: none;
+	}
+
+}
+@media (max-width: 425px){
+	.description{
+		display: none;
+	}
+	.description.description_title{
+		justify-content: center;
+		margin: 0;
+		width: 100%;
+		padding: 0;
 	}
 }
 @media (max-width: 375px){
