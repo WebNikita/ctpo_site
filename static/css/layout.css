@@ -126,7 +126,7 @@ footer{
 		display: none;
 	}
 
-@media (max-width: 1439px){
+@media (max-width: 1440px){
     .description_img img{
     	width: 400px;
     	height: 300px;
@@ -135,43 +135,81 @@ footer{
     	padding: 0px;
 
     }
+
+    .description_img img{
+    	width: 450px;
+    	height: 350px;
+    }
+
+    .320_phone_map{
+		display: none;
+	}
 }
 @media (max-width: 1024px){
+	.block_name{
+		text-align: center;
+		margin: 40px 0 40px 0;
+		font-size: 56px;
+	}
+	header{
+		height: 400px;
+	}
+	.title{
+		padding: 0;
+		width: 100%;
+	}
+	.title h1{
+		padding-top: 9%;
+		text-align: center;
+		font-size: 50px;
+	}
+	.title h2{
+		text-align: center;
+		font-size: 30px;
+	}
     .main_description{
     	float: none;
     	text-align: center;
     	padding-top: 500px;
 
     }
-    .block_name{
-    	font-size: 56px;
-    }
     .content_contact{
     	flex-direction: column-reverse;
     }
     .map{
-    	margin-top: 20px;
+    	margin: 20px auto 0 auto;
     }
-}
-
-@media (max-width: 1024px){
-	.title{
-		padding-top: 90%;
+    .320_phone_map{
+		display: none;
+	}
+	.content{
+		margin: auto;
+		width: 100%;
+	}
+	.content_programs{
 		margin: auto;
 	}
-	.title h1{
-		font-size: 50px;
+	.description{
+		margin-left: 10%;
 	}
-	.title h2{
-		font-size: 30px;
+	.description_title{
+		margin-right: 10%;
 	}
 
 
+	.320_phone_map{
+		display: none;
+	}
 	.main_description{
 		display: none;
 
 	}
+	.footer_content p {
+		margin-right: 50px;
+
+	}
 }
+
 @media (max-width: 768px){
 	.block_name{
 		margin: 25px 0 25px 0;
@@ -222,8 +260,22 @@ footer{
     .footer_content{
     	text-align: center;
     }
+    .320_phone_map{
+		display: none;
+	}
     .footer_content a{
     	margin: 0 20px 0 0;
+    }
+	.description_img img{
+    	width: 300px;
+    	height: 200px;
+    }
+    .main_description{
+    	padding: 0px;
+
+    }
+    .description_txt p{
+    	font-size: 20px;
     }
 
 }
@@ -235,6 +287,9 @@ footer{
 	.news{
     	height: 300px;
     }
+    .320_phone_map{
+		display: none;
+	}
 }
 @media (max-width: 375px){
 	.title h1{
@@ -242,6 +297,9 @@ footer{
 	}
 	.title h2{
 		font-size: 25px;
+	}
+	.320_phone_map{
+		display: none;
 	}
 }
 @media (max-width: 320px){

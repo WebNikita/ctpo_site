@@ -122,6 +122,10 @@ hr{
 	line-height: 130%;
 }
 
+.phone_map_320{
+	display: none;
+}
+
 #h3_robototech:hover{
 	color: #3A55E7;
 }
