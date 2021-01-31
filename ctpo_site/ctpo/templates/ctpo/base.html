@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link href="{% static "css/main.css" %}" rel="stylesheet">
+        <link href="{% static "css/layout.css" %}" rel="stylesheet">
+        <link href="{% static "css/reset.css" %}" rel="stylesheet">
+        <link href="{% static "css/slider.css" %}" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="content">
+                <div class="title">
+                    <h1>ЦТПО "МИЭТ"</h1>
+                    <h2>Центр технической поддержки образования</h2>
+                </div>
+                <div class="main_description">
+                    <p>Обеспечения комплексного сопровождения научно-технического творчества молодежи и инженерного образования с учетом специфики Зеленоградского АО г. Москвы и отраслевой направленности НИУ МИЭТ.</p>
+                </div>
+            </div>
+        </header>    
+        {% block content %}
+        {% endblock %}
+        </div>
+    <footer>
+		<div class="content">
+			<hr>
+			<div class="footer_content">
+				<a href="">Главная</a>
+				<a href="">Новости</a>
+				<p>ЦТПО "МИЭТ"</p>
+			</div>
+		</div>
+	</footer>
+    </body>
+</html>
