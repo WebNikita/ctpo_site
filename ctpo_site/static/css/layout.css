@@ -1,5 +1,4 @@
 header{
-	width: 100vw;
   	height: 100vh;
 	background: url(../img/main_img.png) no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -62,6 +61,7 @@ header{
 }
 
 .description_txt p{
+	max-width: 600px;
 	margin-top: 50px;
 }
 
@@ -69,10 +69,6 @@ header{
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: ;
-}
-
-.map{
-	
 }
 
 .phone_map{
@@ -122,14 +118,66 @@ footer{
 .description_txt.active_txt{
 	display: block;
 }
-.320_phone_map{
-		display: none;
-	}
+
+.news_conteiner{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.news_card{
+	min-width: 595px;
+	min-height: 400px;
+	max-width: 595px;
+	max-height: 400px;
+	margin: 10px 10px 0 0;
+}
+
+.card_info{
+	display: flex;            /* establish flex container */
+  	flex-direction: column;   /* stack flex items vertically */
+  	position: relative; 
+}
+
+.news_title{
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -50%);
+	
+}
+
+.news_text{
+	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+  	color: white;
+  	font-weight: bold;
+}
+
+.block_name_news{
+	text-align: center;
+	margin: 100px 0px 70px 0px;
+	font-family: SF Compact Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 96px;
+	line-height: 115px;
+	color: #C5C5C5;
+}
 
 @media (max-width: 1440px){
     .description_img img{
     	width: 400px;
     	height: 300px;
+	}
+	.description_img{
+    	width: 400px;
+		height: 300px;
+		margin-bottom: 20px;
     }
     .main_description{
     	padding: 0px;
@@ -139,11 +187,9 @@ footer{
     .description_img img{
     	width: 450px;
     	height: 350px;
-    }
-
-    .320_phone_map{
-		display: none;
 	}
+	
+
 }
 @media (max-width: 1024px){
 	.block_name{
@@ -179,9 +225,6 @@ footer{
     .map{
     	margin: 20px auto 0 auto;
     }
-    .320_phone_map{
-		display: none;
-	}
 	.content{
 		margin: auto;
 		width: 100%;
@@ -194,11 +237,6 @@ footer{
 	}
 	.description_title{
 		margin-right: 10%;
-	}
-
-
-	.320_phone_map{
-		display: none;
 	}
 	.main_description{
 		display: none;
@@ -215,7 +253,7 @@ footer{
 		margin: 75px 0 35px 0;
 		text-align: center;
 	}
-
+	
     .contact_info p{
     	font-size: 30px;
     	margin: 0;
@@ -260,28 +298,29 @@ footer{
     .footer_content{
     	text-align: center;
     }
-    .320_phone_map{
-		display: none;
-	}
     .footer_content a{
     	margin: 0 20px 0 0;
     }
 	.description_img img{
     	width: 300px;
     	height: 200px;
-    }
+	}
+	
+	.description_img{
+		height: 200px;
+	}
+
     .main_description{
     	padding: 0px;
 
     }
     .description_txt p{
     	font-size: 20px;
-    }
-
-
-}
-
-@media (max-width: 768px){
+	}
+	.description_txt{
+		margin: 0;
+		height: 100%;
+	}
 	.block_name{
 		font-size: 45px;
 		line-height: 100%;
@@ -289,49 +328,66 @@ footer{
 	.news{
     	height: 300px;
     }
-    .320_phone_map{
-		display: none;
-	}
-
 }
+
 @media (max-width: 425px){
 	.description{
 		display: none;
 	}
+
 	.description_title{ 
 		margin: auto;
 		max-width: 95%;
 		padding: 0;
 	}
-	.description_block h3{
-		text-align: center;
+
+	.block_name_news{
+		margin: 25px 0 25px 0;
+		font-size: 45px;
 	}
 
+	.news_card{
+		min-width: 425px;
+		min-height: 0;
+		margin: 5px 0px 0 0;
+	}
+	.news_title{
+		top: 50%;
+		left: 50%;
+	}
+
+	.news_text{
+		display: none;
+	}
 }
 @media (max-width: 375px){
 	.title h1{
 		font-size: 40px;
 	}
+
 	.title h2{
 		font-size: 25px;
 	}
-	.320_phone_map{
-		display: none;
+
+	.news_card{
+		min-width: 375px;
 	}
 }
 @media (max-width: 320px){
+	.news_card{
+		min-width: 320px;
+	}
+
 	.title h1{
 		font-size: 35px;
 	}
+
 	.title h2{
 		font-size: 25px;
 	}
+
 	.phone_map{
 		display: none;
 	}
-	.320_phone_map{
-		margin: auto;
-		padding: 0;
-		display: block;
-	}
+
 }

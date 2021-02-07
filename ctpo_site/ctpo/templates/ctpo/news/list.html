@@ -1,12 +1,22 @@
 {% extends "ctpo/base.html" %}
-{% block title %}My Blog{% endblock %}
+{% load static %}
+{% block title %}Все новости{% endblock %}
     {% block content %}
-    <h1>My Blog</h1>
-    {% for post in posts %}
-        <h2>
-        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-        </h2>
-        <p class="date">Published {{ post.publish }} by {{ post.author }}</p>
-        {{ post.body|truncatewords:30|linebreaks }}
-    {% endfor %}
+    <h1 class="block_name_news">Новости</h1>
+    <div class="content">
+        <div class="news_conteiner">
+            {% for post in posts %}
+            <div class="news_card">
+                <div class="card_info">
+                    <h3 class="news_title">Новость 0</h3>
+                    <p class="news_text">C места событий наш корреспондент В.ЖирковскийC места событий наш корреспондент В.Жирковский. C места событий наш корреспондент В.Жирковский</p>
+                    <img class="news_img" src="{% static 'img/main_news_img.png' %}" alt="">
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+        {% include "../pagination.html" with page=posts %}
+    </div>
+
 {% endblock %}
