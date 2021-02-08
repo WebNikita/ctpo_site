@@ -12,6 +12,9 @@ class Post(models.Model):
 		('draft', 'В работе'),
 		('published', 'Опубликована'),
 		)
+	TOP_CHOICES = (
+		('top', 'На главную'),
+		)
 	title = models.CharField(max_length=250)
 	slug = models.SlugField(max_length=250,unique_for_date='publish')
 	author = models.ForeignKey(User,on_delete=models.CASCADE,
@@ -21,6 +24,7 @@ class Post(models.Model):
 	created = models.DateTimeField(auto_now_add=True)
 	updated = models.DateTimeField(auto_now=True)
 	status = models.CharField(max_length=10,choices=STATUS_CHOICES,default='draft')
+	on_top = models.CharField(max_length=10,choices=TOP_CHOICES,default='draft')
 	
 	object = models.Manager()      # Стандарный менаджер
 	published = PublishedManager() # Новый менаджер
