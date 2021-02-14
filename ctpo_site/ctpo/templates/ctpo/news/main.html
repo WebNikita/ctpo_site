@@ -13,52 +13,40 @@
             </div>
         </div>
     </header>
-    <h1 class="block_name">Новости</h1>
+    <h1 class="block_name"><a href="{% url 'ctpo:all_news' %}">Новости</a></h1>
 	<div class="news">
 		<div class="content">
 			<div class="content_news">
 				<div class="container">
 					<div data-am-fadeshow="next-prev-navigation">
-					    <input type="radio" name="css-fadeshow" id="slide-1" />
-					    <input type="radio" name="css-fadeshow" id="slide-2" />
-					    <input type="radio" name="css-fadeshow" id="slide-3" />
+						{% for i in len_posts%}
+					    <input type="radio" name="css-fadeshow" id="slide-{{ i }}" />
+						{% endfor %}
 					    <!-- Slides -->
 					    <div class="fs-slides">
-					     	<div class="fs-slide" style="background-image: url(https://images.unsplash.com/photo-1460500063983-994d4c27756c?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2550);">
+							{% for post in posts%}
+					     	<div class="fs-slide" style="background-image: url({{ post.img.url }});">
 					        <!-- Add content to images (sample) -->
 					        	<div class="slider_style">
-					          		<h1>Новость 1</h1>
-					          		<p>Краткое описание <strong>your</strong> site!</p>
+					          		<h1>{{ post.title }}</h1>
 					        	</div>
 					      	</div>
-					    <div class="fs-slide" style="background-image: url(https://images.unsplash.com/photo-1440557653082-e8e186733eeb?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);">
-					    	<div class="slider_style">
-					          		<h1>Новость 2</h1>
-					          		<p>Краткое описание <strong>your</strong> site!</p>
-					        	</div>
-					    </div>
-					    <div class="fs-slide" style="background-image: url(https://images.unsplash.com/photo-1440557653082-e8e186733eeb?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);">
-					    	<div class="slider_style">
-					          		<h1>Новость 3</h1>
-					          		<p>Краткое описание <strong>your</strong> site!</p>
-					        	</div>
-					    </div>
-					      
+							{% endfor %}
 					    </div>
 					    <div class="fs-quick-nav">
-					      	<label class="fs-quick-btn" for="slide-1"></label>
-					      	<label class="fs-quick-btn" for="slide-2"></label>
-					      	<label class="fs-quick-btn" for="slide-3"></label>
+						{% for i in len_posts%}
+					      	<label class="fs-quick-btn" for="slide-{{ i }}"></label>
+						{% endfor %}
 					    </div>
 					    <div class="fs-prev-nav">
-						    <label class="fs-prev-btn" for="slide-1"></label>
-						    <label class="fs-prev-btn" for="slide-2"></label>
-						    <label class="fs-prev-btn" for="slide-3"></label>
+						{% for i in len_posts%}
+					      	<label class="fs-prev-btn" for="slide-{{ i }}"></label>
+						{% endfor %}
 					    </div>
 					    <div class="fs-next-nav">
-					      	<label class="fs-next-btn" for="slide-1"></label>
-					      	<label class="fs-next-btn" for="slide-2"></label>
-					      	<label class="fs-next-btn" for="slide-3"></label>
+						{% for i in len_posts%}
+					      	<label class="fs-next-btn" for="slide-{{ i }}"></label>
+						{% endfor %}
 					    </div>
 					</div>  
 				</div>
@@ -72,14 +60,15 @@
 			<div class="content_programs">
 				<div class="description">
 					<div class="description_img activ_img"  id="robototech_img">
-						<img src="{% static 'img/robototech.png' %}" alt="photo">
+						<img src="{{MEDIA_URL}}{{ robotech.img.url }}" height="338" width="600" alt="photo">
 					</div>
 					<div class="description_txt active_txt" id="robototech_txt">
 						<p>{{robotech.body}}</p>
 					</div>
 					<div class="description_img" id="IoT_img">
-                        <img src="{% static 'img/robototech.png' %}" height="450" width="600" alt="">
+                        <img src="{{MEDIA_URL}}{{ IoT.img.url }}" height="338" width="600" alt="">
 					</div>
+
 					<div class="description_txt" id="IoT_txt">
 						<p>{{IoT.body}}</p>
 					</div>

@@ -1,7 +1,12 @@
 {% extends "ctpo/base.html" %}
 {% block title %}{{ post.title }}{% endblock %}
     {% block content %}
-    <h1>{{ post.title }}</h1>
-    <p class="date">Published {{ post.publish }} by {{ post.author }}</p>
-    {{ post.body|linebreaks }}
+    <div class="content">
+        <h1 class="news_name">{{ post.title }}</h1>
+        
+        <div class="news_body">
+            {{ post.body|safe }}
+            {{ post.publish }}
+        </div>
+    </div>
 {% endblock %}

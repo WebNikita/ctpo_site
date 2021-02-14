@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+from django.conf import settings
+from django.conf.urls.static import static
 from pathlib import Path
 import os
 
@@ -38,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ctpo.apps.CtpoConfig'
+    'ctpo.apps.CtpoConfig',
+    'ckeditor_uploader',
+    'ckeditor',
+
 ]
 
 MIDDLEWARE = [
@@ -120,6 +124,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+
+# STATIC_ROOT = os.path.join(BASE_DIR, "static")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
 STATICFILES_DIRS = [
    os.path.join(BASE_DIR, "static"),
+   os.path.join(BASE_DIR, "media"),
 ]
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
