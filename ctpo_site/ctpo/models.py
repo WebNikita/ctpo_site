@@ -18,6 +18,8 @@ class Post(models.Model):
 		('yes','На главную'),
 	)
 	title = models.CharField(max_length=250, verbose_name='Название')
+
+
 	slug = models.SlugField(max_length=250,unique_for_date='publish')
 	author = models.ForeignKey(User,on_delete=models.CASCADE,
 	related_name='blog_posts')
@@ -28,9 +30,8 @@ class Post(models.Model):
 	updated = models.DateTimeField(auto_now=True)
 	status = models.CharField(max_length=10,choices=STATUS_CHOICES,default='draft', verbose_name='Статус')
 	on_main = models.CharField(max_length=10,choices=ON_MAIN_CHOICES,default='No', verbose_name='Позицианирование')
-
-
-	object = models.Manager()      # Стандарный менаджер
+	
+	bject = models.Manager()      # Стандарный менаджер
 	published = PublishedManager() # Новый менаджер
 
 	def get_absolute_url(self):
