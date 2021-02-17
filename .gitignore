@@ -1,3 +1,8 @@
-/env
 env
 *sqlite3
+__pycache__/*
+ctpo_site/__pycache__
+ctpo/__pycache__
+ctpo/migrations/__pycache__
+*.swp
+*.swo
