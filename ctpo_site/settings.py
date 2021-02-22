@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'k@n&85gh1gwfx8qr2rd&%$tr9rbrj&^^79tbin7o$!my+8e2j7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ctpo-miet.ru']
 
 
 # Application definition

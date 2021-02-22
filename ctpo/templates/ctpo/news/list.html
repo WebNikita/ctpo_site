@@ -6,12 +6,14 @@
     <div class="content">
         <div class="news_conteiner">
             {% for post in posts %}
-            <div class="news_card">
+	    <a href="{{post.get_absolute_url}}">
+	    <div class="news_card">
                 <div class="card_info">
                     <h3 class="news_title">{{post.title}}</h3>
                     <img class="news_list_img" src="{{ post.img.url }}" alt="">
                 </div>
             </div>
+	    </a>
             {% endfor %}
             
         </div>
